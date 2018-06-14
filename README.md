@@ -1,3 +1,8 @@
+RealtyMogul Interview Assessment
+Application description: This application utilizes axios in getting data from an external JSON file and parses that data throughout a componenet called Sections. Sections are then controlled by sub-components that are made up of a header and a content portion. State is managed both in the App.js file and the Section component. Though considered, Redux did not seem completely necessary to apply in this particular application given its simplicity and ease of state-management. Were this application to increase in complexity, Redux may be helpful to implement at a later time. Lastly, the application is styled utilizing the Bootstrap framework. Minor stylistic changes were applied to the application to allow users to feel more comfortable with its appearance as well as more easily identify UI elements. 
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
