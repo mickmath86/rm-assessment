@@ -11,7 +11,6 @@ class App extends Component {
 
   state={
     data: [ ],
-
   };
 
   //parse data
@@ -38,13 +37,7 @@ class App extends Component {
     })
     this.setState(this.state)
   }
-  removeSection = () => {
-    this.state.data.pop({
-
-    })
-    this.setState(this.state)
-  }
-
+  
 
   render() {
 
@@ -62,23 +55,16 @@ class App extends Component {
     );
 
     return (
-          <div className="text-center">
-
-             <img src={logo} className="App-logo" alt="logo" />
-
-              <h1 className="App-title">Realty Mogul Interview Assessment</h1>
-              <p>by Mike Mathias</p>
-
-
+      <div className="text-center">
+         <img src={logo} className="App-logo" alt="logo" />
+          <h1 className="App-title">Realty Mogul Interview Assessment</h1>
+          <p>by Mike Mathias</p>
         <button className="btn m-1 btn-success" onClick={this.addSection}>Add Section</button>
 
+        {/* Section Repeat */}
         {sections}
+
       </div>
-
-
-
-
-
     );
   }
 }

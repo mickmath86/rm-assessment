@@ -22,4 +22,5 @@ Header.propTypes = {
   toggleContent: PropTypes.func.isRequired,
   contentIsShown: PropTypes.bool.isRequired
 }
+
 export default Header;

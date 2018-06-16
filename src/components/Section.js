@@ -15,7 +15,7 @@ export default class Section extends Component {
   toggleContent = () =>
     this.setState({
       contentIsShown: !this.state.contentIsShown
-    })
+  })
 
   //activate panel function
   panelClick = panel => {

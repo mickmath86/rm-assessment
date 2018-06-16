@@ -8,15 +8,20 @@ const Content = props => {
 
   return (
     <content className="p-1">
+
+      {/* Panel A */}
       <div className="row p-3">
         <div className="col-md-6">
           <div onClick={()=>props.panelClick('a')} className = {props.panelAIsActive ? active : inactive}>
+            {/* content */}
             {props.panelAIsActive ? props.contentA : ""}
-
           </div>
         </div>
+
+        {/* Panel B */}
         <div className="col-md-6">
           <div onClick={()=>props.panelClick('b')} className = {props.panelAIsActive ? inactive : active}>
+            {/* content */}
             {props.panelAIsActive ? "" : props.contentB}
           </div>
         </div>
@@ -30,4 +35,5 @@ Content.propTypes = {
   contentA: PropTypes.string.isRequired,
   contentB: PropTypes.string.isRequired
 }
+
 export default Content;
